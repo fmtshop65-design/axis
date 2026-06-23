@@ -1,0 +1,10 @@
+# Redirect bare domain to www
+http://axis-tattoo.com/* https://www.axis-tattoo.com/:splat 301
+http://www.axis-tattoo.com/* https://www.axis-tattoo.com/:splat 301
+https://axis-tattoo.com/* https://www.axis-tattoo.com/:splat 301
+
+# Old domain redirect if any
+https://flesh-tattoo.com/* https://www.axis-tattoo.com/:splat 301
+
+# 404 fallback
+/* /404.html 404

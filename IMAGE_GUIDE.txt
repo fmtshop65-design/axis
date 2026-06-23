@@ -1,0 +1,38 @@
+═══════════════════════════════════════════════════════════════
+AXIS WEBSITE — IMAGE & VIDEO PLACEMENT GUIDE (updated for SEO)
+═══════════════════════════════════════════════════════════════
+
+All product photos are now served as compressed .webp files with
+SEO-friendly, descriptive names. If you replace a photo, KEEP THE
+SAME FILENAME so the page keeps working, and save it as .webp
+(recommended ~1200px on the long edge, quality ~80).
+
+CARTRIDGES PAGE  (present ✓)
+  • axis-tattoo-cartridge-needles-1.webp
+  • axis-tattoo-cartridge-needles-2.webp
+  • axis-tattoo-cartridge-needles-3.webp
+  • axis-tattoo-cartridge-needles-4.webp
+
+SILVER BUTTER PAGE  (present ✓)
+  • axis-silver-butter-tattoo-glide-1.webp
+  • axis-silver-butter-tattoo-glide-2.webp
+  • axis-silver-butter-tattoo-glide-3.webp
+  • axis-silver-butter-tattoo-glide-4.webp
+
+AFTER CARE PAGE  (⚠ YOU MUST ADD THESE — not in the package)
+  • axis-tattoo-aftercare-cream-1.webp
+  • axis-tattoo-aftercare-cream-2.webp
+  • axis-tattoo-aftercare-cream-3.webp
+  • axis-tattoo-aftercare-cream-4.webp
+
+HERO VIDEO
+  • The product pages currently use hero-bg.mp4 (the homepage video)
+    as a working fallback. For a dedicated product hero, add a file
+    named hero.mp4 and change the <source src="hero-bg.mp4"> back to
+    "hero.mp4" on silver-butter.html and after-care.html.
+
+BRAND ASSETS (auto-generated, already present)
+  • favicon.svg     — browser tab icon
+  • axis-logo.png    — 512×512 logo used in structured data
+  • og-image.jpg     — 1200×630 social-share preview image
+═══════════════════════════════════════════════════════════════

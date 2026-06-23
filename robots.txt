@@ -1,0 +1,5 @@
+User-agent: *
+Allow: /
+Disallow: /uploads/
+
+Sitemap: https://www.axis-tattoo.com/sitemap.xml

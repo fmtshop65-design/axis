@@ -1,0 +1,160 @@
+/* ============================================================
+   AXIS — shared responsive enhancements
+   Loaded on every page AFTER the inline <style> so it can refine
+   the mobile layout without removing any existing rules.
+   ============================================================ */
+
+/* ---- Global mobile hardening: never allow horizontal scroll ---- */
+html, body { max-width: 100%; overflow-x: hidden; }
+img, video { max-width: 100%; height: auto; }
+
+/* ============================================================
+   Product media blocks (a looping video with text laid over it)
+   These used to be hand-positioned with absolute % offsets that
+   spilled off-screen on phones. They are now class-based:
+   overlaid on desktop, neatly stacked under the clip on mobile.
+   ============================================================ */
+.media-block {
+  position: relative;
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin: 40px 0;
+}
+.media-block > video {
+  width: 95%;
+  max-width: 1200px;
+  height: auto;
+  border-radius: 15px;
+  display: block;
+  filter: brightness(0.5);
+}
+.media-caption {
+  position: absolute;
+  top: 8%;
+  left: 5%;
+  max-width: 60%;
+  text-align: left;
+  color: #fff;
+  pointer-events: none;
+  z-index: 10;
+}
+.media-caption h2 {
+  margin: 0 0 12px 0;
+  text-transform: uppercase;
+  letter-spacing: 3px;
+  font-weight: bold;
+  line-height: 1.15;
+  text-shadow: 0 2px 24px rgba(0,0,0,0.85);
+  font-size: clamp(16px, 2.4vw, 22px);
+}
+.media-caption h2.lead { font-size: clamp(24px, 4.5vw, 50px); }
+.media-caption p {
+  margin: 0;
+  max-width: 45ch;
+  opacity: 0.92;
+  text-shadow: 0 2px 12px rgba(0,0,0,0.85);
+  font-size: clamp(13px, 2vw, 20px);
+  line-height: 1.5;
+}
+.media-badges {
+  position: absolute;
+  bottom: 9%;
+  right: 5%;
+  display: flex;
+  justify-content: flex-end;
+  gap: 12px;
+  flex-wrap: wrap;
+  max-width: 70%;
+  pointer-events: none;
+  z-index: 10;
+}
+.media-badges span {
+  background: rgba(255,255,255,0.15);
+  padding: 5px 15px;
+  border-radius: 50px;
+  font-size: 12px;
+  backdrop-filter: blur(5px);
+  -webkit-backdrop-filter: blur(5px);
+  border: 1px solid rgba(255,255,255,0.3);
+}
+
+@media (max-width: 768px) {
+  .media-block { flex-direction: column; margin: 24px 0; align-items: stretch; }
+  .media-block > video { width: 100%; border-radius: 10px; filter: brightness(0.6); }
+  .media-caption,
+  .media-badges {
+    position: static;
+    max-width: 100%;
+    width: 100%;
+    text-align: left;
+    justify-content: flex-start;
+    padding: 16px 24px 0;
+  }
+  .media-caption h2.lead { font-size: clamp(22px, 7vw, 32px); }
+  .media-badges { padding-bottom: 4px; }
+}
+
+/* ============================================================
+   Home page "Brand introduction" block.
+   The long multi-paragraph copy is shown in a readable panel
+   directly under the clip (its original intent), so it can never
+   overflow the video on any screen size.
+   ============================================================ */
+.brand-intro {
+  position: relative;
+  width: 100%;
+  max-width: 1500px;
+  margin: 10px auto 0;
+  padding: 0 8vw;
+}
+.brand-intro > video {
+  width: 100%;
+  height: auto;
+  border-radius: 15px;
+  display: block;
+  filter: brightness(0.55);
+}
+.brand-intro-text {
+  margin: 30px auto 4px;
+  max-width: 900px;
+}
+.brand-intro-text h2.title {
+  font-family: 'Orbitron', sans-serif;
+  font-size: clamp(20px, 3.2vw, 30px);
+  text-transform: uppercase;
+  letter-spacing: 3px;
+  line-height: 1.1;
+  margin: 24px 0 10px;
+  color: var(--amber-bright, #e87730);
+}
+.brand-intro-text h2.title:first-child { margin-top: 0; }
+.brand-intro-text p {
+  font-size: clamp(14px, 1.6vw, 16px);
+  line-height: 1.75;
+  margin: 0 0 6px;
+  color: var(--dim, #8a7a6a);
+  max-width: 72ch;
+}
+.brand-intro-badges {
+  display: flex;
+  gap: 12px;
+  flex-wrap: wrap;
+  margin: 22px auto 0;
+  max-width: 900px;
+}
+.brand-intro-badges span {
+  background: rgba(255,255,255,0.10);
+  padding: 6px 16px;
+  border-radius: 50px;
+  font-size: 12px;
+  border: 1px solid rgba(200,96,26,0.4);
+  color: var(--white, #f0ece6);
+  letter-spacing: 2px;
+}
+@media (max-width: 768px) {
+  .brand-intro { padding: 0 24px; }
+  .brand-intro > video { border-radius: 10px; }
+  .brand-intro-text { margin-top: 22px; }
+}

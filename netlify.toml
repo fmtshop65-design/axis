@@ -1,0 +1,9 @@
+# Netlify config for AXIS
+[build]
+  publish = "."
+
+# Serve .html files directly (no extension stripping) so links match canonicals.
+[build.processing.html]
+  pretty_urls = false
+
+# Netlify automatically serves /404.html for missing pages.

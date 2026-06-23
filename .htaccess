@@ -1,0 +1,53 @@
+# ============================================================
+#  AXIS — .htaccess (Apache / LiteSpeed shared hosting)
+#  Handles: HTTPS, canonical domain (non-www), clean URLs,
+#  custom 404, compression, caching, and doc protection.
+# ============================================================
+
+RewriteEngine On
+
+# --- 1. Force HTTPS ---
+RewriteCond %{HTTPS} off
+RewriteRule ^ https://%{HTTP_HOST}%{REQUEST_URI} [L,R=301]
+
+# --- 2. Canonical domain: force non-www (axis-tattoo.com) ---
+RewriteCond %{HTTP_HOST} ^www\.axis-tattoo\.com [NC]
+RewriteRule ^ https://axis-tattoo.com%{REQUEST_URI} [L,R=301]
+
+# --- 3. Clean URLs: DISABLED ---
+# The site links directly to .html files so it works on any host without
+# rewrite support. To switch to extensionless URLs later, re-enable a clean-URL
+# block here AND update the internal links, canonical tags and sitemap to match.
+
+# --- 4. Custom 404 ---
+ErrorDocument 404 /404.html
+
+# --- 5. Gzip / Brotli compression ---
+<IfModule mod_deflate.c>
+  AddOutputFilterByType DEFLATE text/html text/plain text/css text/javascript \
+    application/javascript application/json image/svg+xml application/xml
+</IfModule>
+
+# --- 6. Browser caching ---
+<IfModule mod_expires.c>
+  ExpiresActive On
+  ExpiresByType image/webp        "access plus 1 year"
+  ExpiresByType image/png         "access plus 1 year"
+  ExpiresByType image/jpeg        "access plus 1 year"
+  ExpiresByType image/svg+xml     "access plus 1 year"
+  ExpiresByType video/mp4         "access plus 1 year"
+  ExpiresByType text/css          "access plus 1 month"
+  ExpiresByType application/javascript "access plus 1 month"
+  ExpiresByType text/html         "access plus 0 seconds"
+</IfModule>
+
+# --- 7. Keep project docs out of the public web ---
+<FilesMatch "(README\.txt|IMAGE_GUIDE\.txt|SEO-SETUP-GUIDE\.md|generate-sitemap\.mjs)$">
+  Require all denied
+</FilesMatch>
+
+# --- 8. Security headers (basic) ---
+<IfModule mod_headers.c>
+  Header set X-Content-Type-Options "nosniff"
+  Header set Referrer-Policy "strict-origin-when-cross-origin"
+</IfModule>

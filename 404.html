@@ -1,0 +1,163 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Page Not Found (404) — AXIS</title>
+<meta name="robots" content="noindex, follow">
+<meta name="theme-color" content="#080808">
+<link rel="icon" href="/favicon.svg" type="image/svg+xml">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link href="https://fonts.googleapis.com/css2?family=Orbitron:wght@400;700;900&family=Rajdhani:wght@300;400;500;600&family=Space+Mono&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="enhance.css">
+<script src="translations.js"></script>
+<style>
+  *, *::before, *::after { margin: 0; padding: 0; box-sizing: border-box; }
+  :root {
+    --black: #080808; --amber: #c8601a; --amber-bright: #e87730;
+    --white: #f0ece6; --dim: #8a7a6a; --line: rgba(200,96,26,0.2);
+  }
+  body {
+    background: var(--black); color: var(--white);
+    font-family: 'Rajdhani', sans-serif;
+    min-height: 100vh; display: flex; flex-direction: column;
+    align-items: center; justify-content: center; text-align: center;
+    padding: 32px; overflow-x: hidden;
+  }
+  nav {
+    position: fixed; top: 0; left: 0; right: 0; z-index: 100;
+    display: flex; align-items: center; justify-content: space-between;
+    padding: 20px 48px;
+    background: rgba(8,8,8,0.97);
+    border-bottom: 1px solid var(--line);
+  }
+  .nav-logo {
+    font-family: 'Orbitron', sans-serif; font-size: 20px; font-weight: 900;
+    letter-spacing: 6px; color: var(--white); text-decoration: none;
+  }
+  .nav-logo span { color: var(--amber-bright); }
+  .nav-links { display: flex; gap: 28px; list-style: none; }
+  .nav-links a {
+    font-family: 'Rajdhani', sans-serif; font-size: 12px; font-weight: 500;
+    letter-spacing: 3px; text-transform: uppercase; color: var(--dim);
+    text-decoration: none; transition: color 0.3s;
+  }
+  .nav-links a:hover { color: var(--amber-bright); }
+  .nav-right { display: flex; align-items: center; gap: 12px; }
+  select {
+    background: transparent; border: 1px solid var(--amber);
+    color: var(--white); font-family: 'Rajdhani', sans-serif;
+    font-size: 11px; padding: 5px 8px; cursor: pointer; letter-spacing: 2px;
+  }
+  select option { background: var(--black); color: var(--white); }
+  .nav-toggle {
+    display: none; flex-direction: column; justify-content: center;
+    gap: 5px; background: transparent; border: none; cursor: pointer;
+    padding: 8px 4px; z-index: 201; flex-shrink: 0;
+  }
+  .nav-toggle span {
+    display: block; width: 24px; height: 2px; background: var(--white);
+    border-radius: 2px; transition: all 0.3s ease;
+  }
+  .nav-toggle[aria-expanded="true"] span:nth-child(1) { transform: translateY(7px) rotate(45deg); }
+  .nav-toggle[aria-expanded="true"] span:nth-child(2) { opacity: 0; transform: scaleX(0); }
+  .nav-toggle[aria-expanded="true"] span:nth-child(3) { transform: translateY(-7px) rotate(-45deg); }
+  .code {
+    font-family: 'Orbitron', sans-serif; font-weight: 900;
+    font-size: clamp(80px, 20vw, 200px); line-height: 1;
+    color: transparent; -webkit-text-stroke: 2px var(--amber);
+    letter-spacing: -4px;
+  }
+  .tag {
+    font-family: 'Space Mono', monospace; font-size: 12px; letter-spacing: 4px;
+    color: var(--amber); text-transform: uppercase; margin: 24px 0 12px;
+  }
+  h1 {
+    font-family: 'Orbitron', sans-serif; font-weight: 700;
+    font-size: clamp(22px, 4vw, 34px); margin-bottom: 16px; letter-spacing: 1px;
+  }
+  p { color: var(--dim); font-size: 16px; max-width: 460px; line-height: 1.7; margin-bottom: 36px; }
+  .links { display: flex; gap: 14px; flex-wrap: wrap; justify-content: center; }
+  .btn {
+    font-family: 'Orbitron', sans-serif; font-size: 11px; font-weight: 700;
+    letter-spacing: 3px; text-transform: uppercase; padding: 14px 28px;
+    text-decoration: none; transition: all 0.25s;
+  }
+  .btn-primary { background: var(--amber); color: var(--black); }
+  .btn-primary:hover { background: var(--amber-bright); }
+  .btn-ghost { color: var(--dim); border: 1px solid var(--line); }
+  .btn-ghost:hover { color: var(--white); border-color: var(--amber); }
+  @media (max-width: 860px) {
+    nav { padding: 14px 20px; }
+    .nav-toggle { display: flex; order: 3; }
+    .nav-right { order: 2; }
+    .nav-links {
+      display: none; flex-direction: column;
+      position: fixed; top: 0; left: 0; right: 0; bottom: 0;
+      background: rgba(8,8,8,0.97);
+      align-items: center; justify-content: center;
+      gap: 28px; z-index: 199;
+    }
+    .nav-links.nav-open { display: flex; }
+    .nav-links a { font-size: 16px; letter-spacing: 5px; }
+  }
+</style>
+</head>
+<body>
+<nav>
+  <a href="index.html" class="nav-logo" aria-label="AXIS Home">AX<span>I</span>S</a>
+  <ul class="nav-links" id="navLinks" role="list">
+    <li><a href="index.html" data-i18n="home">Home</a></li>
+    <li><a href="cartridges.html" data-i18n="cartridges">Cartridges</a></li>
+    <li><a href="silver-butter.html" data-i18n="silverButter">Silver Butter</a></li>
+    <li><a href="after-care.html" data-i18n="afterCare">After Care</a></li>
+    <li><a href="blog.html" data-i18n="blog">Blog</a></li>
+  </ul>
+  <div class="nav-right">
+    <select id="langSelect" aria-label="Select language" onchange="setLang(this.value)">
+      <option value="en">EN</option>
+      <option value="ru">RU</option>
+      <option value="es">ES</option>
+      <option value="tr">TR</option>
+      <option value="pt">PT</option>
+      <option value="fr">FR</option>
+      <option value="de">DE</option>
+    </select>
+  </div>
+  <button class="nav-toggle" id="navToggle" aria-label="Toggle navigation" aria-expanded="false">
+    <span></span><span></span><span></span>
+  </button>
+</nav>
+  <div class="code">404</div>
+  <div class="tag">Signal Lost</div>
+  <h1>This page doesn't exist</h1>
+  <p>The page you're looking for may have moved or never existed. Let's get you back to precision.</p>
+  <div class="links">
+    <a href="index.html" class="btn btn-primary" data-i18n="home">Back to Home</a>
+    <a href="cartridges.html" class="btn btn-ghost" data-i18n="cartridges">Cartridges</a>
+    <a href="silver-butter.html" class="btn btn-ghost" data-i18n="silverButter">Silver Butter</a>
+    <a href="after-care.html" class="btn btn-ghost" data-i18n="afterCare">After Care</a>
+    <a href="blog.html" class="btn btn-ghost" data-i18n="blog">Blog</a>
+  </div>
+<script>
+(function(){
+  var btn = document.getElementById('navToggle');
+  var menu = document.getElementById('navLinks');
+  if(!btn || !menu) return;
+  btn.addEventListener('click', function(){
+    var open = menu.classList.toggle('nav-open');
+    btn.setAttribute('aria-expanded', open ? 'true' : 'false');
+    document.body.style.overflow = open ? 'hidden' : '';
+  });
+  menu.querySelectorAll('a').forEach(function(a){
+    a.addEventListener('click', function(){
+      menu.classList.remove('nav-open');
+      btn.setAttribute('aria-expanded', 'false');
+      document.body.style.overflow = '';
+    });
+  });
+})();
+</script>
+<script src="protect.js"></script>
+</body>
+</html>
