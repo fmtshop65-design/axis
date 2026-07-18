@@ -71,7 +71,7 @@ const translations = {
     "butterFeat2": "Anti-Inflammatory Action: Infused with Cannabis Sativa Seed Oil to significantly reduce skin inflammation and swelling.",
     "butterFeat3": "Soothing Relief: Contains Clove Extract, known for its natural calming properties to help ease discomfort and soothe the skin.",
     "butterFeat4": "Optimal Hydration: Prevents skin dryness and irritation while working.",
-    "butterParagraph": "Silver Butter AXIS is more than just a process cream; it is a perfect fusion of advanced skin care, professional performance, and a signature fragrance that elevates your craftsmanship and makes the client's journey truly pleasant."
+    "butterParagraph": "Silver Butter AXIS is more than just a process cream; it is a perfect fusion of advanced skin care, professional performance, and a signature fragrance that elevates your craftsmanship and makes the client's journey truly pleasant.",
   
     "blog": "Blog",
     "blogReadMore": "Read Article →",
@@ -86,6 +86,9 @@ const translations = {
     "blog_aftercare_excerpt": "The complete professional aftercare protocol from the first hour post-session through long-term maintenance using AXIS Silver Balm.",
     "blog_choose_title": "How Professional Tattoo Artists Choose the Right Cartridge",
     "blog_choose_excerpt": "The 4-step framework that experienced artists use to select the correct needle configuration, size, and cartridge type for every session.",
+        "blog_ak_title": "AK Tattoo Cartridge Needles: An Instrument for the Most Precise Artworks",
+    "blog_ak_excerpt": "An advanced membrane system, 316L medical-grade steel, and an ergonomic silicone finger rest — engineered for precise linework, soft shading, and fast color packing.",
+
   },
   "ru": {
     "home": "Главная",
@@ -159,7 +162,7 @@ const translations = {
     "butterFeat2": "Противовоспалительное действие: с маслом семян конопли (Cannabis Sativa) для значительного уменьшения воспаления и отёка кожи.",
     "butterFeat3": "Успокаивающий эффект: содержит экстракт гвоздики, известный природными успокаивающими свойствами, помогающими снять дискомфорт и успокоить кожу.",
     "butterFeat4": "Оптимальное увлажнение: предотвращает сухость и раздражение кожи во время работы.",
-    "butterParagraph": "Silver Butter AXIS — это больше, чем просто рабочий крем; это идеальное сочетание передового ухода за кожей, профессиональной эффективности и фирменного аромата, который подчёркивает ваше мастерство и делает процесс по-настоящему приятным для клиента."
+    "butterParagraph": "Silver Butter AXIS — это больше, чем просто рабочий крем; это идеальное сочетание передового ухода за кожей, профессиональной эффективности и фирменного аромата, который подчёркивает ваше мастерство и делает процесс по-настоящему приятным для клиента.",
   
     "blog": "Блог",
     "blogReadMore": "Читать статью →",
@@ -174,6 +177,9 @@ const translations = {
     "blog_aftercare_excerpt": "Полный профессиональный протокол ухода с первых часов после сессии до долгосрочного обслуживания с AXIS Silver Balm.",
     "blog_choose_title": "Как профессиональные тату-мастера выбирают картридж",
     "blog_choose_excerpt": "4-шаговая система, которую используют опытные мастера для выбора иглы, конфигурации и типа картриджа.",
+        "blog_ak_title": "Картриджи-иглы AK: инструмент для самых точных работ",
+    "blog_ak_excerpt": "Продвинутая мембранная система, медицинская сталь 316L и эргономичный силиконовый упор для пальцев — для точного контура, мягкой растушёвки и быстрой закраски.",
+
   },
   "es": {
     "home": "Inicio",
@@ -247,7 +253,7 @@ const translations = {
     "butterFeat2": "Acción antiinflamatoria: con aceite de semilla de cáñamo (Cannabis Sativa) para reducir notablemente la inflamación y la hinchazón de la piel.",
     "butterFeat3": "Alivio calmante: contiene extracto de clavo, conocido por sus propiedades calmantes naturales que ayudan a aliviar las molestias y a suavizar la piel.",
     "butterFeat4": "Hidratación óptima: previene la sequedad y la irritación de la piel mientras trabajas.",
-    "butterParagraph": "Silver Butter AXIS es más que una simple crema de proceso; es una fusión perfecta de cuidado avanzado de la piel, rendimiento profesional y una fragancia característica que realza tu trabajo y hace que la experiencia del cliente sea realmente agradable."
+    "butterParagraph": "Silver Butter AXIS es más que una simple crema de proceso; es una fusión perfecta de cuidado avanzado de la piel, rendimiento profesional y una fragancia característica que realza tu trabajo y hace que la experiencia del cliente sea realmente agradable.",
   
     "blog": "Blog",
     "blogReadMore": "Leer artículo →",
@@ -262,6 +268,9 @@ const translations = {
     "blog_aftercare_excerpt": "El protocolo completo de cuidados post-sesión con AXIS Silver Balm para una cicatrización óptima.",
     "blog_choose_title": "Cómo los tatuadores profesionales eligen su cartucho",
     "blog_choose_excerpt": "El marco de 4 pasos que usan los artistas con experiencia para seleccionar aguja, tamaño y tipo de cartucho.",
+        "blog_ak_title": "Agujas de cartucho AK: un instrumento para los trabajos más precisos",
+    "blog_ak_excerpt": "Un sistema de membrana avanzado, acero de grado médico 316L y un apoyo de dedo de silicona ergonómico, diseñados para líneas precisas, sombreado suave y relleno de color rápido.",
+
   },
   "tr": {
     "home": "Anasayfa",
@@ -335,7 +344,7 @@ const translations = {
     "butterFeat2": "Anti-Enflamatuar Etki: Cilt iltihabını ve şişliği önemli ölçüde azaltmak için kenevir tohumu yağı (Cannabis Sativa) içerir.",
     "butterFeat3": "Yatıştırıcı Rahatlama: Rahatsızlığı hafifletmeye ve cildi yatıştırmaya yardımcı doğal sakinleştirici özellikleriyle bilinen karanfil özü içerir.",
     "butterFeat4": "Optimal Nemlendirme: Çalışırken cilt kuruluğunu ve tahrişini önler.",
-    "butterParagraph": "Silver Butter AXIS sadece bir işlem kremi değildir; gelişmiş cilt bakımını, profesyonel performansı ve ustalığınızı öne çıkaran imza bir kokuyu kusursuzca birleştirerek müşterinin deneyimini gerçekten keyifli hale getirir."
+    "butterParagraph": "Silver Butter AXIS sadece bir işlem kremi değildir; gelişmiş cilt bakımını, profesyonel performansı ve ustalığınızı öne çıkaran imza bir kokuyu kusursuzca birleştirerek müşterinin deneyimini gerçekten keyifli hale getirir.",
   
     "blog": "Blog",
     "blogReadMore": "Makaleyi Oku →",
@@ -350,6 +359,9 @@ const translations = {
     "blog_aftercare_excerpt": "AXIS Silver Balm ile ilk saatten uzun vadeli bakıma kadar eksiksiz profesyonel bakım protokolü.",
     "blog_choose_title": "Profesyonel Dövme Sanatçıları Kartuşu Nasıl Seçer",
     "blog_choose_excerpt": "Deneyimli sanatçıların her seans için doğru iğne konfigürasyonunu seçmek için kullandığı 4 adımlı çerçeve.",
+        "blog_ak_title": "AK Dövme Kartuş İğneleri: En Hassas Çalışmalar İçin Bir Enstrüman",
+    "blog_ak_excerpt": "Gelişmiş membran sistemi, 316L tıbbi sınıf çelik ve ergonomik silikon parmak desteği — hassas çizgi, yumuşak gölgeleme ve hızlı renk doldurma için tasarlandı.",
+
   },
   "pt": {
     "home": "Início",
@@ -423,7 +435,7 @@ const translations = {
     "butterFeat2": "Ação anti-inflamatória: com óleo de semente de cânhamo (Cannabis Sativa) para reduzir significativamente a inflamação e o inchaço da pele.",
     "butterFeat3": "Alívio calmante: contém extrato de cravo, conhecido por suas propriedades calmantes naturais que ajudam a aliviar o desconforto e suavizar a pele.",
     "butterFeat4": "Hidratação ideal: previne o ressecamento e a irritação da pele durante o trabalho.",
-    "butterParagraph": "O Silver Butter AXIS é mais do que um simples creme de processo; é uma fusão perfeita de cuidado avançado da pele, desempenho profissional e uma fragrância característica que valoriza o seu trabalho e torna a experiência do cliente verdadeiramente agradável."
+    "butterParagraph": "O Silver Butter AXIS é mais do que um simples creme de processo; é uma fusão perfeita de cuidado avançado da pele, desempenho profissional e uma fragrância característica que valoriza o seu trabalho e torna a experiência do cliente verdadeiramente agradável.",
   
     "blog": "Blog",
     "blogReadMore": "Ler artigo →",
@@ -438,6 +450,9 @@ const translations = {
     "blog_aftercare_excerpt": "O protocolo completo de cuidados pós-sessão com AXIS Silver Balm para uma cicatrização ideal.",
     "blog_choose_title": "Como Tatuadores Profissionais Escolhem o Cartucho Certo",
     "blog_choose_excerpt": "O framework de 4 passos que artistas experientes usam para selecionar configuração, tamanho e tipo de agulha.",
+        "blog_ak_title": "Agulhas de Cartucho AK: um instrumento para os trabalhos mais precisos",
+    "blog_ak_excerpt": "Um sistema de membrana avançado, aço de grau médico 316L e um apoio de dedo em silicone ergonómico — projetados para traços precisos, sombreamento suave e preenchimento de cor rápido.",
+
   },
   "fr": {
     "home": "Accueil",
@@ -511,7 +526,7 @@ const translations = {
     "butterFeat2": "Action anti-inflammatoire : enrichi en huile de graines de chanvre (Cannabis Sativa) pour réduire nettement l'inflammation et le gonflement de la peau.",
     "butterFeat3": "Apaisement : contient de l'extrait de clou de girofle, connu pour ses propriétés apaisantes naturelles qui aident à soulager l'inconfort et à apaiser la peau.",
     "butterFeat4": "Hydratation optimale : prévient la sécheresse et les irritations de la peau pendant le travail.",
-    "butterParagraph": "Silver Butter AXIS est bien plus qu'une simple crème de travail ; c'est une fusion parfaite de soin avancé de la peau, de performance professionnelle et d'un parfum signature qui sublime votre savoir-faire et rend l'expérience du client vraiment agréable."
+    "butterParagraph": "Silver Butter AXIS est bien plus qu'une simple crème de travail ; c'est une fusion parfaite de soin avancé de la peau, de performance professionnelle et d'un parfum signature qui sublime votre savoir-faire et rend l'expérience du client vraiment agréable.",
   
     "blog": "Blog",
     "blogReadMore": "Lire l'article →",
@@ -526,6 +541,9 @@ const translations = {
     "blog_aftercare_excerpt": "Le protocole complet de soins post-séance avec AXIS Silver Balm pour une cicatrisation optimale.",
     "blog_choose_title": "Comment les Tatoueurs Professionnels Choisissent leur Cartouche",
     "blog_choose_excerpt": "Le cadre en 4 étapes que les artistes expérimentés utilisent pour sélectionner la bonne configuration d'aiguille.",
+        "blog_ak_title": "Aiguilles à cartouche AK : un instrument pour les œuvres les plus précises",
+    "blog_ak_excerpt": "Un système de membrane avancé, un acier de qualité médicale 316L et un repose-doigt ergonomique en silicone — conçus pour un tracé précis, un ombrage doux et un remplissage de couleur rapide.",
+
   },
   "de": {
     "home": "Startseite",
@@ -599,7 +617,7 @@ const translations = {
     "butterFeat2": "Entzündungshemmende Wirkung: angereichert mit Hanfsamenöl (Cannabis Sativa), um Hautentzündungen und Schwellungen deutlich zu reduzieren.",
     "butterFeat3": "Beruhigende Linderung: enthält Nelkenextrakt, bekannt für seine natürlichen beruhigenden Eigenschaften, die Unbehagen lindern und die Haut beruhigen.",
     "butterFeat4": "Optimale Feuchtigkeit: verhindert Hauttrockenheit und Reizungen während der Arbeit.",
-    "butterParagraph": "Silver Butter AXIS ist mehr als nur eine Arbeitscreme; es ist die perfekte Verbindung aus fortschrittlicher Hautpflege, professioneller Leistung und einem charakteristischen Duft, der Ihr Können hervorhebt und das Erlebnis für den Kunden wirklich angenehm macht."
+    "butterParagraph": "Silver Butter AXIS ist mehr als nur eine Arbeitscreme; es ist die perfekte Verbindung aus fortschrittlicher Hautpflege, professioneller Leistung und einem charakteristischen Duft, der Ihr Können hervorhebt und das Erlebnis für den Kunden wirklich angenehm macht.",
   
     "blog": "Blog",
     "blogReadMore": "Artikel lesen →",
@@ -614,6 +632,9 @@ const translations = {
     "blog_aftercare_excerpt": "Das vollständige professionelle Nachsorgeprotokoll von der ersten Stunde bis zur Langzeitpflege mit AXIS Silver Balm.",
     "blog_choose_title": "Wie professionelle Tätowierer die richtige Kartusche wählen",
     "blog_choose_excerpt": "Der 4-Schritte-Rahmen, den erfahrene Künstler zur Auswahl der richtigen Nadelkonfiguration verwenden.",
+        "blog_ak_title": "AK Tattoo-Kartuschennadeln: ein Instrument für präziseste Arbeiten",
+    "blog_ak_excerpt": "Ein fortschrittliches Membransystem, medizinischer 316L-Stahl und eine ergonomische Silikon-Fingerauflage — entwickelt für präzise Linien, weiches Schattieren und schnelles Farbfüllen.",
+
   }
 };
 
