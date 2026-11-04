@@ -5,7 +5,7 @@
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 <title>AXIS — Professional Tattoo Cartridge Needles & Supplies</title>
 <link rel="preconnect" href="https://fonts.googleapis.com">
-<link href="https://fonts.googleapis.com/css2?family=Orbitron:wght@400;700;900&family=Rajdhani:wght@300;400;500;600&family=Space+Mono&display=swap" rel="stylesheet">
+<link href="https://fonts.googleapis.com/css2?family=Orbitron:wght@400;700;900&family:Rajdhani:wght@300;400;500;600&family=Space+Mono&display=swap" rel="stylesheet">
 <meta name="description" content="AXIS engineers precision tattoo cartridge needles, Silver Butter glide and premium aftercare for professional artists — consistent, safe, blowout-free.">
 <link rel="canonical" href="https://www.axis-tattoo.com/">
 <meta name="robots" content="index, follow, max-image-preview:large, max-snippet:-1, max-video-preview:-1">
@@ -611,7 +611,7 @@
 
     <!-- Brand introduction -->
 <section class="brand-intro">
-    <video autoplay muted loop playsinline preload="none" poster="poster-home.jpg">
+    <video muted loop playsinline preload="none" poster="poster-home.jpg" data-lazy-video>
         <source src="0611.mp4" type="video/mp4">
     </video>
     <div class="brand-intro-text">
@@ -858,6 +858,26 @@ const io = new IntersectionObserver(entries => {
 reveals.forEach(el => io.observe(el));
 </script>
 
+<script>
+/* Lazy video loading with IntersectionObserver */
+(function(){
+  const lazyVideos = document.querySelectorAll('video[data-lazy-video]');
+  if(!lazyVideos.length || !('IntersectionObserver' in window)) return;
+  
+  const videoObserver = new IntersectionObserver((entries, observer) => {
+    entries.forEach(entry => {
+      if(entry.isIntersecting) {
+        const video = entry.target;
+        video.load();
+        video.play().catch(() => {});
+        observer.unobserve(video);
+      }
+    });
+  }, { rootMargin: '200px' });
+  
+  lazyVideos.forEach(video => videoObserver.observe(video));
+})();
+</script>
 
 <script>
 /* Mobile nav toggle */
